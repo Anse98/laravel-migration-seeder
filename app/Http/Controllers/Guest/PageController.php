@@ -16,7 +16,7 @@ class PageController extends Controller
 
     public function train()
     {
-        $trains = Train::whereDate('giorno_partenza', date('Y-m-d'))->get();
+        $trains = Train::whereDate('giorno_partenza', '>=', date('Y-m-d'))->get();
 
         return view('trains', compact('trains'));
     }
