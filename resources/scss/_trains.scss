@@ -1,0 +1,17 @@
+.train.card h3:first-child {
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 1px lightgray;
+    background-color: #FEF8EA;
+    color: #006565;
+}
+
+.train.card div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.train.card .hour {
+    color: #006565;
+}

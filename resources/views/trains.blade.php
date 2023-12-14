@@ -5,14 +5,14 @@
 <div class="container">
     @forelse ($trains as $train)
         <div class="train card mb-3 p-3">
-            <p>Compagnia: {{$train->azienda}}</p>
-            <p>Stazione di partenza: {{$train->stazione_partenza}}</p>
-            <p>Stazione di arrivo: {{$train->stazione_arrivo}}</p>
-            <p>Giorno di partenza: {{$train->giorno_partenza}}</p>
-            <p>Giorno di arrivo: {{$train->giorno_arrivo}}</p>
-            <p>Orario di partenza: {{$train->orario_partenza}}</p>
-            <p>Orario di arrivo: {{$train->orario_arrivo}}</p>
-            <p>N carrozze: {{$train->numero_carrozze}}</p>
+            <h3>{{$train->azienda}}</h3>
+            <div><span>Stazione di partenza:</span> <span>{{$train->stazione_partenza}}</span></div>
+            <div><span>Stazione di arrivo:</span><span>{{$train->stazione_arrivo}}</span></div>
+            <div><span>Giorno di partenza:</span> <span>{{$train->giorno_partenza}}</span></div>
+            <div><span>Giorno di arrivo:</span><span>{{$train->giorno_arrivo}}</span></div>
+            <div><span>Orario di partenza: </span><span class="hour"><b>{{$train->orario_partenza}}</b></span></div>
+            <div><span>Orario di arrivo:</span><span class="hour"><b>{{$train->orario_arrivo}}</b></span></div>
+            <div><span>N carrozze:</span><span>{{$train->numero_carrozze}}</span></div>
         </div>
     @empty
         <p>Nessun treno disponibile!</p>
